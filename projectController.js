@@ -1,6 +1,6 @@
 // controllers/projectController.js
-import { Issue } from "../models/Issue.js";
-import {Project} from "../models/Project.js";
+import { Issue } from "./Issue.js";
+import {Project} from "./Project.js";
 
 export const createProject = async (req, res) => {
   try {
