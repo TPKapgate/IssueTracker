@@ -1,7 +1,7 @@
 // routes/projectRoutes.js
 import express from "express";
-import { createProject, getCreateProjectForm, getProjectDetail, getProjects } from "../controllers/projectController.js";
-import { getCreateIssueForm } from "../controllers/issueController.js";
+import { createProject, getCreateProjectForm, getProjectDetail, getProjects } from "./projectController.js";
+import { getCreateIssueForm } from "./issueController.js";
 
 const router = express.Router();
 
