@@ -4,8 +4,8 @@ import bodyParser from "body-parser";
 import path from "path";
 import { fileURLToPath } from "url";
 import { connect as db } from "./db.js";
-import projectRouter from "./routes/projectRoutes.js";
-import issueRouter from "./routes/issueRoutes.js";
+import projectRouter from "./projectRoutes.js";
+import issueRouter from "./issueRoutes.js";
 
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
