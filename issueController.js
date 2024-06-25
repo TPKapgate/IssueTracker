@@ -1,7 +1,7 @@
 // controllers/issueController.js
 // import  from '../models/issueModel.js';
 
-import { Issue } from "../models/Issue.js";
+import { Issue } from "./Issue.js";
 
 // Get all issues for a project
 export const getIssues = async (req, res) => {
