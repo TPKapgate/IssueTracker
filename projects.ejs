@@ -1,0 +1,15 @@
+<main class="p-3 mb-2 bg-secondary text-white">
+    <div class="container">
+        <h1 class="text-light mb-4">List of Projects</h1>
+        <ul class="list-group mb-4">
+            <% projects.forEach(project => { %>
+                <li class="list-group-item">
+                    <a href="/issues/<%= project._id %>" class="text-decoration-none text-dark"><%= project.name %></a>
+                </li>
+            <% }); %>
+        </ul>
+        <div class="d-grid gap-2">
+            <a href="/projects/create" class="btn btn-primary btn-lg">Create New Project</a>
+        </div>
+    </div>
+</main>

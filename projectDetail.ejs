@@ -1,0 +1,14 @@
+<main>
+    <h1>Issues for Project <%= issues.length > 0 ? issues[0].projectId.name : '' %></h1>
+    <ul>
+        <% issues.forEach(issue => { %>
+            <li>
+                <h3><%= issue.title %></h3>
+                <p><%= issue.description %></p>
+                <p>Labels: <%= issue.labels.join(', ') %></p>
+                <p>Author: <%= issue.author %></p>
+            </li>
+        <% }); %>
+    </ul>
+    <a href="/issues/create">Create New Issue</a>
+</main>
