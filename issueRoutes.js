@@ -1,6 +1,6 @@
 // routes/issueRoutes.js
 import express from 'express';
-import { getIssues, getCreateIssueForm, createIssue } from '../controllers/issueController.js';
+import { getIssues, getCreateIssueForm, createIssue } from './issueController.js';
 
 const router = express.Router();
 
