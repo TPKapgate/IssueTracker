@@ -4,8 +4,10 @@ import {Project} from "./Project.js";
 
 export const createProject = async (req, res) => {
   try {
-    const project = new Project(req.body);
-    await project.save();
+    console.log("Request body:", req.body); 
+    const newProject = req.body;
+    await Project.create(newProject);
+    // await project.save();
     res.redirect("/projects");
   } catch (error) {
     res.status(500).send(error);
