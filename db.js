@@ -39,8 +39,14 @@ let client;
 export const connect = async () => {
   try {
     client = new MongoClient(uri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  tls: true, // Ensure TLS is enabled
+  serverApi: {
+    version: '1',
+    strict: true,
+    deprecationErrors: true,
+  }
     });
 
     await client.connect();
