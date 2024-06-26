@@ -61,12 +61,4 @@ export const closeConnection = async () => {
     console.error("Error closing MongoDB connection:", error);
   }
 };
-o close the MongoDB connection
-export const closeConnection = async () => {
-  try {
-    await client.close();
-    console.log("MongoDB connection closed");
-  } catch (error) {
-    console.error("Error closing MongoDB connection:", error);
-  }
-};
+
